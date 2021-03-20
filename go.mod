@@ -1,3 +1,3 @@
-module github.com/goreleaser/goreleaser-action
+module github.com/iann0036/goreleaser-action
 
 go 1.15

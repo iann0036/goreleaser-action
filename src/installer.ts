@@ -17,7 +17,7 @@ export async function getGoReleaser(version: string): Promise<string> {
   core.info(`✅ GoReleaser version found: ${release.tag_name}`);
   const filename = getFilename();
   const downloadUrl = util.format(
-    'https://github.com/goreleaser/goreleaser/releases/download/%s/%s',
+    'https://github.com/iann0036/goreleaser/releases/download/%s/%s',
     release.tag_name,
     filename
   );

@@ -192,7 +192,7 @@ const core = __importStar(__webpack_require__(186));
 const semver = __importStar(__webpack_require__(911));
 exports.getRelease = (version) => __awaiter(void 0, void 0, void 0, function* () {
     const resolvedVersion = (yield resolveVersion(version)) || version;
-    const url = `https://github.com/goreleaser/goreleaser/releases/${resolvedVersion}`;
+    const url = `https://github.com/iann0036/goreleaser/releases/${resolvedVersion}`;
     const http = new httpm.HttpClient('goreleaser-action');
     return (yield http.getJson(url)).result;
 });
@@ -270,7 +270,7 @@ function getGoReleaser(version) {
         }
         core.info(`✅ GoReleaser version found: ${release.tag_name}`);
         const filename = getFilename();
-        const downloadUrl = util.format('https://github.com/goreleaser/goreleaser/releases/download/%s/%s', release.tag_name, filename);
+        const downloadUrl = util.format('https://github.com/iann0036/goreleaser/releases/download/%s/%s', release.tag_name, filename);
         core.info(`⬇️ Downloading ${downloadUrl}...`);
         const downloadPath = yield tc.downloadTool(downloadUrl);
         core.debug(`Downloaded to ${downloadPath}`);

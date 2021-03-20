@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goreleaser/goreleaser-action.git"
+    "url": "git+https://github.com/iann0036/goreleaser-action.git"
   },
   "keywords": [
     "actions",
